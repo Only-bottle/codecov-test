@@ -15,7 +15,7 @@ coverage:
     slack:
       default:
         url: ${{ secrets.SLACK_WEBHOOK_URL }}
-        only_pulls: true
+        only_pulls: false
         branches: 
           - "main"
         paths: 

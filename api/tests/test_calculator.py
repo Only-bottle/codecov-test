@@ -40,3 +40,4 @@ def test_divide_by_0():
 def test_pow():
     assert Calculator.pow(2, 4) == 16
     assert Calculator.pow(3, 2) == 9
+    assert Calculator.pow(0, 5) == 0
