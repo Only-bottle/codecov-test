@@ -16,7 +16,5 @@ coverage:
       default:
         url: ${{ secrets.SLACK_WEBHOOK_URL }}
         only_pulls: false
-        branches: 
-          - "main"
-        paths: 
-          - "api"
+        base:
+          - "auto"
