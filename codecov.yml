@@ -8,6 +8,7 @@ coverage:
 
 
 comment:
+  layout: "reach, diff, flags, files"
   show_critical_paths: true
 
 profiling:
