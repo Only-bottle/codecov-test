@@ -4,3 +4,10 @@ coverage:
       default:
         target: 100%
         threshold: 1%
+
+comment:
+  show_critical_paths: true
+
+profiling:
+  critical_files_paths:
+    - api/calculator.py
