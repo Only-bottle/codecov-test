@@ -35,3 +35,8 @@ def test_divide():
 
 def test_divide_by_0():
     assert Calculator.divide(2.0, 0) == "Cannot divide by 0"
+
+
+def test_pow():
+    assert Calculator.pow(2, 4) == 16
+    assert Calculator.pow(3, 2) == 9
