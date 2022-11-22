@@ -1,16 +1,22 @@
 coverage:
   status:
     project: yes
-      # default:
-      #   target: 100%
-      #   threshold: 1%
     patch: yes
 
+  comment:
+    layout: "reach, diff, flags, files"
+    show_critical_paths: true
 
-comment:
-  layout: "reach, diff, flags, files"
-  show_critical_paths: true
+  profiling:
+    critical_files_paths:
+      - api/calculator.py
 
-profiling:
-  critical_files_paths:
-    - api/calculator.py
+  notify:
+    slack:
+      default:
+        url: ${{ secrets.SLACK_WEBHOOK_URL }}
+        only_pulls: false
+        branches: 
+          - "main"
+        paths: 
+          - "api"
