@@ -1,11 +1,14 @@
 coverage:
   status:
-    project:
-      default:
-        target: 100%
-        threshold: 1%
+    project: yes
+      # default:
+      #   target: 100%
+      #   threshold: 1%
+    patch: yes
+
 
 comment:
+  layout: "reach, diff, flags, files"
   show_critical_paths: true
 
 profiling:
